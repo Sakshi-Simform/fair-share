@@ -1,0 +1,24 @@
+{
+    "name": "fair-share",
+    "version": "1.0.0",
+    "description": "Fair Share is a TypeScript-powered expense tracker that automatically splits group costs and tracks who owes what, with data saved in localStorage.",
+    "type": "module",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dhruvdhaduk-simform/fair-share.git"
+    },
+    "keywords": [
+        "fair-share",
+        "expense",
+        "split",
+        "tracker",
+        "balance"
+    ],
+    "author": "Sakshi Shah, Krushna Rathod, Dhruv Dhaduk",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dhruvdhaduk-simform/fair-share/issues"
+    },
+    "homepage": "https://github.com/dhruvdhaduk-simform/fair-share#readme"
+}
