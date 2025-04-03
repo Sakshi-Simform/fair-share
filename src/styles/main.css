@@ -1,0 +1,42 @@
+.main-container {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.main-container-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    list-style: none;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mark-as-settle-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.625rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#mark-as-settle-btn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
