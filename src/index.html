@@ -62,7 +62,12 @@
                 <li>
                     <p>Dinner at Restaurant</p>
                     <p>$45 (Krushna paid, split with Dhruv, Sakshi)</p>
-                    <button class="view-details-button">View Details</button>
+                    <button
+                        class="view-details-button"
+                        popovertarget="expense-detail"
+                    >
+                        View Details
+                    </button>
                 </li>
             </ul>
             <ul class="recent-exprenses">
@@ -73,7 +78,7 @@
                 </li>
             </ul>
 
-            <div class="expense-detail">
+            <div class="expense-detail" id="expense-detail" popover="auto">
                 <p class="expense-detail-title">Dinner at Restaurant</p>
 
                 <p class="expense-detail-description">

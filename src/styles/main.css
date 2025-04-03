@@ -49,6 +49,8 @@
     padding: 1.25rem;
     border: 1px solid var(--border-color);
     width: 30rem;
+    margin: auto;
+    color: var(--text-color);
 }
 
 .expense-detail-title {
@@ -81,7 +83,7 @@
 }
 
 .expense-detail-participants li {
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
