@@ -57,20 +57,50 @@
 
         <main class="main-container">
             <p class="main-container-title">Recent Exprenses</p>
-            <ul>
+
+            <ul class="recent-exprenses">
                 <li>
                     <p>Dinner at Restaurant</p>
                     <p>$45 (Krushna paid, split with Dhruv, Sakshi)</p>
-                    <button id="mark-as-settle-btn">View Details</button>
+                    <button class="view-details-button">View Details</button>
                 </li>
             </ul>
-            <ul>
+            <ul class="recent-exprenses">
                 <li>
                     <p>Dinner at Restaurant</p>
                     <p>$45 (Krushna paid, split with Dhruv, Sakshi)</p>
-                    <button id="mark-as-settle-btn">View Details</button>
+                    <button class="view-details-button">View Details</button>
                 </li>
             </ul>
+
+            <div class="expense-detail">
+                <p class="expense-detail-title">Dinner at Restaurant</p>
+
+                <p class="expense-detail-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    eos debitis qui ducimus saepe possimus cupiditate
+                    accusantium hic facere natus ipsum nesciunt nulla eaque ea
+                    nisi, dolore nihil autem iste?
+                </p>
+
+                <p class="expense-detail-split">
+                    $45 (Krushna paid, split with Dhruv, Sakshi)
+                </p>
+
+                <ul class="expense-detail-participants">
+                    <li>
+                        <p>Krushna <span class="earns">earns $30.00</span></p>
+                    </li>
+                    <li>
+                        <p>Sakshi <span class="owes">owes $15.00 </span></p>
+                        <button class="expense-paid-btn">Paid</button>
+                    </li>
+                    <li>
+                        <p>Dhruv <span class="owes">owes $15.00</span></p>
+                        <button class="expense-paid-btn">Paid</button>
+                    </li>
+                </ul>
+            </div>
         </main>
 
         <div class="form-container"></div>

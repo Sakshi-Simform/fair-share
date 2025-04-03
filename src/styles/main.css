@@ -7,26 +7,27 @@
     margin-top: 2rem;
 }
 
-.main-container-title {
+.main-container-title,
+.expense-detail-title {
     font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.main-container ul {
+.recent-exprenses {
     list-style: none;
     padding: 0.625rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
-.main-container ul li {
+.recent-exprenses li {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#mark-as-settle-btn {
+.view-details-button {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -36,7 +37,68 @@
     transition: background-color 0.3s;
 }
 
-#mark-as-settle-btn:hover {
+.view-details-button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.expense-detail {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    width: 30rem;
+}
+
+.expense-detail-title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+.expense-detail-participants {
+    list-style: none;
+    padding: 0.625rem 0;
+}
+
+.expense-detail-split {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.owes {
+    color: var(--danger-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.earns {
+    color: var(--success-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.expense-detail-participants li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expense-paid-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-left: 2rem;
+}
+
+.expense-paid-btn:hover {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
