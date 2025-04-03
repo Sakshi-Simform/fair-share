@@ -1,0 +1,40 @@
+{
+    "name": "fair-share",
+    "version": "1.0.0",
+    "description": "Fair Share is a TypeScript-powered expense tracker that automatically splits group costs and tracks who owes what, with data saved in localStorage.",
+    "type": "module",
+    "scripts": {
+        "dev": "parcel serve ./src/index.html --port 3000",
+        "type-check": "tsc -b --noEmit",
+        "lint": "eslint src --ext .ts --cache --fix",
+        "clean": "rm -rf dist .parcel-cache",
+        "build": "npm run clean && npm run type-check && npm run lint && parcel build ./src/index.html --no-autoinstall --no-optimize",
+        "format": "prettier src --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dhruvdhaduk-simform/fair-share.git"
+    },
+    "keywords": [
+        "fair-share",
+        "expense",
+        "split",
+        "tracker",
+        "balance"
+    ],
+    "author": "Sakshi Shah, Krushna Rathod, Dhruv Dhaduk",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dhruvdhaduk-simform/fair-share/issues"
+    },
+    "homepage": "https://github.com/dhruvdhaduk-simform/fair-share#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.23.0",
+        "eslint": "^9.23.0",
+        "globals": "^16.0.0",
+        "parcel": "^2.14.4",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.2",
+        "typescript-eslint": "^8.29.0"
+    }
+}
