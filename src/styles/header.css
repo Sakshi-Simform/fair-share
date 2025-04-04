@@ -2,10 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:1.875rem;
-    padding-bottom: 0.938rem;
     border-bottom: 1px solid var(--border-color);
-    margin: 1.25rem;
+    padding: 1.5rem 0;
 }
 
 h1{
