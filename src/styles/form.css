@@ -1,0 +1,110 @@
+#form-container {
+    /* Dimensions of form container */
+    margin: auto;
+    width: 100%;
+    max-width: 40rem;
+    padding: 1.25rem;
+
+    /* Look of form container */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+
+    --form-input-height: 2.5rem;
+    --form-input-font-size: 1rem;
+}
+
+.form-heading {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-item label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    height: var(--form-input-height);
+
+    font-size: var(--form-input-font-size);
+
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+
+    padding-left: 0.5rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+.participants {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.participants > span {
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+
+    font-weight: 600;
+    padding: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.participants-input-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.participants-input-container > input {
+    flex: 1;
+}
+
+.participants-input-container > button,
+.add-expense-btn {
+    width: fit-content;
+    height: var(--form-input-height);
+
+    background-color: var(--primary-color);
+    color: white;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: var(--form-input-font-size);
+    font-weight: 600;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    cursor: pointer;
+}
+
+.participants-input-container > button:hover,
+.add-expense-btn:hover {
+    background-color: var(--secondary-color);
+}

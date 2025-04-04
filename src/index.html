@@ -122,6 +122,84 @@
             </div>
         </main>
 
-        <div class="form-container"></div>
+        <div id="form-container" class="form-container" popover="auto">
+            <p class="form-heading">Add New Expense</p>
+
+            <!-- Add New Expense Form -->
+            <form>
+                <!-- Title input -->
+                <div class="form-item">
+                    <label for="title">Title</label>
+                    <input
+                        id="title"
+                        name="title"
+                        type="text"
+                        placeholder="Enter Title"
+                        required
+                    />
+                </div>
+
+                <!-- Description input -->
+                <div class="form-item">
+                    <label for="description">Description</label>
+                    <input
+                        id="description"
+                        name="description"
+                        type="text"
+                        placeholder="Enter Description"
+                        required
+                    />
+                </div>
+
+                <!-- Amount input -->
+                <div class="form-item">
+                    <label for="amount">Amount</label>
+                    <input
+                        id="amount"
+                        name="amount"
+                        type="number"
+                        placeholder="Enter Amount"
+                        required
+                    />
+                </div>
+
+                <!-- Participant input -->
+                <div class="form-item">
+                    <label for="participant">Participant</label>
+                    <div class="participants-input-container">
+                        <input
+                            id="participant"
+                            name="participant"
+                            type="text"
+                            placeholder="Enter participant"
+                            required
+                        />
+                        <button type="button">Add</button>
+                    </div>
+
+                    <!-- List of added participants -->
+                    <div class="participants">
+                        <span>Kaushal</span>
+                        <span>Sakshi</span>
+                        <span>Krushna</span>
+                        <span>Dhruv</span>
+                    </div>
+                </div>
+
+                <!-- Select which participant paid -->
+                <div class="form-item">
+                    <label for="paid-by">Paid By</label>
+                    <select name="paid-by" id="paid-by">
+                        <option value="user1">Kaushal</option>
+                        <option value="user2">Sakshi</option>
+                        <option value="user3">Krushna</option>
+                        <option value="user4">Dhruv</option>
+                    </select>
+                </div>
+
+                <!-- Submit -->
+                <button class="add-expense-btn">Add Expense</button>
+            </form>
+        </div>
     </body>
 </html>
