@@ -70,13 +70,13 @@
     font-size: 1.3rem;
 }
 
-.owes {
+.to-pay {
     color: var(--danger-color);
     font-weight: 600;
     margin-left: 0.5rem;
 }
 
-.earns {
+.to-receive {
     color: var(--success-color);
     font-weight: 600;
     margin-left: 0.5rem;
