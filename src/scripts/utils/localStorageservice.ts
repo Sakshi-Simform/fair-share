@@ -36,8 +36,7 @@ export class StorageService {
         return toggle ? JSON.parse(toggle) : [];
     }
 
-    static saveTheme(toggle: boolean): void {
-        if (!toggle) return;
-        localStorage.setItem(this.TOGGLE_KEY, JSON.stringify(toggle));
+    static saveTheme(isDarkMode: boolean): void {
+        localStorage.setItem(this.TOGGLE_KEY, JSON.stringify(isDarkMode));
     }
 }
