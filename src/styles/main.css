@@ -7,6 +7,7 @@
     margin-top: 2rem;
 }
 
+/* main container title */
 .main-container-title,
 .expense-detail-title {
     font-size: 1.5rem;
@@ -15,16 +16,14 @@
     margin-bottom: 1rem;
 }
 
-.recent-exprenses {
-    list-style: none;
-    padding: 0.625rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.recent-exprenses li {
+/* recent expenses list */
+.recent-expenses li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .view-details-button {
@@ -42,6 +41,7 @@
     cursor: pointer;
 }
 
+/* expense details popup */
 .expense-detail {
     background: var(--card-bg);
     border-radius: 0.5rem;
@@ -103,4 +103,12 @@
 .expense-paid-btn:hover {
     background-color: var(--secondary-color);
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .recent-expenses li {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: start;
+    }
 }
