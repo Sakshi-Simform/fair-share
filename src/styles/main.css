@@ -1,0 +1,114 @@
+.main-container {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+/* main container title */
+.main-container-title,
+.expense-detail-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* recent expenses list */
+.recent-expenses li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.view-details-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.625rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.view-details-button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* expense details popup */
+.expense-detail {
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    width: 30rem;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.expense-detail-title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+.expense-detail-participants {
+    list-style: none;
+    padding: 0.625rem 0;
+}
+
+.expense-detail-split {
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.to-pay {
+    color: var(--danger-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.to-receive {
+    color: var(--success-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.expense-detail-participants li {
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expense-paid-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-left: 2rem;
+}
+
+.expense-paid-btn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .recent-expenses li {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: start;
+    }
+}
