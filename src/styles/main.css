@@ -107,7 +107,7 @@
 body:not(#expense-detail:has(:popover-open)) main {
     transition-duration: 300ms;
 }
- 
+
 body:has(#expense-detail:popover-open) main {
     filter: blur(5px);
     transition-duration: 300ms;
