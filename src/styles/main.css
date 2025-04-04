@@ -4,7 +4,6 @@
     box-shadow: var(--shadow);
     padding: 1.25rem;
     border: 1px solid var(--border-color);
-    margin-top: 2rem;
 }
 
 /* main container title */
@@ -103,6 +102,15 @@
 .expense-paid-btn:hover {
     background-color: var(--secondary-color);
     cursor: pointer;
+}
+
+body:not(#expense-detail:has(:popover-open)) main {
+    transition-duration: 300ms;
+}
+
+body:has(#expense-detail:popover-open) main {
+    filter: blur(5px);
+    transition-duration: 300ms;
 }
 
 @media (max-width: 600px) {

@@ -1,25 +1,24 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:1.875rem;
-    padding-bottom: 0.938rem;
     border-bottom: 1px solid var(--border-color);
-    margin: 1.25rem;
+    padding: 1.5rem 0;
 }
 
-h1{
+h1 {
     color: var(--primary-color);
     margin: 0;
 }
 
-.btn-controller{
+.btn-controller {
     display: flex;
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-#theme-toggle-btn , #expense-btn{
+#theme-toggle-btn,
+#expense-btn {
     background: var(--primary-color);
     border: none;
     color: #ffffff;
@@ -30,11 +29,10 @@ h1{
     transition: background 0.3s;
 }
 
-#expense-btn:hover{
+#expense-btn:hover {
     background: var(--secondary-color);
 }
 
-#theme-toggle-btn:hover{
+#theme-toggle-btn:hover {
     background: var(--secondary-color);
 }
-
